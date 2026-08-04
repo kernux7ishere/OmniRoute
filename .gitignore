@@ -233,6 +233,15 @@ docs/prompts/AGENT-OWNERSHIP-PROTOCOL.omniroute-mim.md
 docs/prompts/AGENT-OWNERSHIP-PROTOCOL.omniroute-mid.md
 omniroute.md
 
+# Ignored Database files and local state
+*.sqlite
+*.sqlite-journal
+*.sqlite-wal
+*.sqlite-shm
+*.db
+*.md5
+.omniroute/
+
 # mise configuration
 mise.toml
 _artifacts/          # release-green artifacts
