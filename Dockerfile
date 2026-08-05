@@ -13,7 +13,7 @@ ENV PORT=3000
 # Copy package files and install production dependencies
 COPY package*.json ./
 COPY open-sse/package.json ./open-sse/package.json
-RUN npm ci --omit=dev --legacy-peer-deps --ignore-scripts
+RUN npm ci --legacy-peer-deps --ignore-scripts
 
 # Copy application files and scripts
 COPY . .
